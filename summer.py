@@ -1,7 +1,7 @@
 # working but run only on chatgpt also chatgpt can't form GUI .
 # you can't delet the added task
 # no alarm system
-# poor graphic 
+# poor graphic #testing 3.35pm 2aug25
 import tkinter as tk
 from tkinter import messagebox
 import sqlite3
