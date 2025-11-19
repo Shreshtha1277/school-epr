@@ -47,6 +47,24 @@ Opens a separate window displaying all saved tasks (ordered by date and time).</
 <p>Allow users to edit or remove existing tasks from the list.</p>
 <p>Add “Edit” and “Delete” buttons beside each task in the “Show Tasks” window.</p>
 <p>Update or remove entries in the SQLite database dynamically.</p>
+
+<h3>The planner in your raining2.py file has these main features:</h3>
+<p>The Student Planner application has been significantly updated to enhance its functionality and user experience. Key improvements include the addition of task editing and deletion capabilities, a robust alarm system with optional sound notifications, and a more intuitive user interface.</p>
+
+<p>The core of the changes revolves around a refactored database schema and improved event handling. The database now supports task completion status and recurrence patterns, with a specific "copy-and-advance" behavior for recurring tasks. This means that when a recurring task triggers, the original task remains, and a new occurrence is automatically created for the future. Additionally, the application includes an auto-cleaning feature to remove old tasks, which can be triggered manually or run silently on a daily basis if enabled.</p>
+
+<p>The user interface has been redesigned to be more organized and user-friendly. It now features distinct sections for adding new tasks and viewing upcoming ones, with clearer input fields and a more modern look using ttk widgets. The date and time selection has been improved, and the overall layout is more responsive.</p>
+
+<p>Specific enhancements include:</p>
+
+<p>Alarm System: A background thread now monitors for scheduled tasks and triggers pop-up notifications. This system also handles playing an optional alarm sound. 10</p>
+<p>Recurrence Support: Tasks can now be set to repeat daily or weekly, with specific logic for generating future occurrences. 10</p>
+
+<p>Task Management: Users can now edit existing tasks and delete them directly from the interface. The display of tasks has been improved with a tree view in the "Show All Tasks" window. 33 43</p>
+<p>Database Migration: The application safely handles upgrades to the database schema, adding new columns if they don't exist. 9</p>
+<p>UI Improvements: The interface uses ttk widgets for a more modern look and feel, and the layout is structured into logical sections for task input and upcoming task display. 21</p>
+<p>Code Structure: The code has been organized into more logical methods for building the UI, handling CRUD operations, and managing task views. 11 22 30 48</p>
+<p>Cleanup and Exit: The application now properly handles closing the database connection and cleaning up threads when the user quits. 49</p>
 </body>
 </html>
 
